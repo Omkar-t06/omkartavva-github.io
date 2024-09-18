@@ -1,34 +1,44 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { useEffect, useState } from 'react'
+import { ThemeProvider } from './context/theme'
 import './App.css'
+// import ThemeUIBtn from './components/ThemeUIBtn'
+import { MdLightMode } from "react-icons/md";
+import ThemeUIBtn from './components/ThemeUIBtn';
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [themeMode, setThemeMode] = useState("light")
+
+  const darkTheme = () => {
+    setThemeMode("dark")
+  }
+
+  const lightTheme = () => {
+    setThemeMode("light")
+  }
+
+  useEffect(() => {
+    document.querySelector('html').classList.remove("light","dark");
+    document.querySelector('html').classList.add(themeMode);
+  }, [themeMode]);
 
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <ThemeProvider value={{themeMode, lightTheme, darkTheme}}>
+      <header className="bg-ivory p-4 text-soft-black dark:bg-dark-navy">
+  <div className="flex justify-between items-center">
+    <h1 className="text-3xl font-bold text-teal dark:text-light-cyan">&lt;Omkar/&gt;</h1>
+    <ThemeUIBtn/>
+  </div>
+  <nav>
+    <ul className="flex space-x-4 text-slate-gray dark:text-light-cyan">
+      <li className="hover:text-sky-blue">Home</li>
+      <li className="hover:text-sky-blue">About</li>
+      <li className="hover:text-sky-blue">Projects</li>
+      <li className="hover:text-sky-blue">Contact</li>
+    </ul>
+  </nav>
+</header>
+
+    </ThemeProvider>
   )
 }
 
