@@ -20,7 +20,7 @@ function App() {
 
   return (
     <ThemeProvider value={{themeMode, lightTheme, darkTheme}}>
-      <Headers/> 
+      <Headers/>
       <section id = "home"className='bg-ivory dark:bg-dark-navy p-4 m-5 shadow-md'>home</section>
     </ThemeProvider>
   )
