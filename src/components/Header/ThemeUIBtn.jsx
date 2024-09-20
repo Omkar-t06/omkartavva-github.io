@@ -17,11 +17,12 @@ function ThemeUIBtn() {
 
   const Icon = themeMode === "dark" ? MdLightMode : MdDarkMode;
   return (
-    <button 
+    <button
+      aria-label='Theme Toggle Button'
       className='p-2 rounded-full bg-gray-200 dark:bg-gray-800 hover:bg-gray-300 dark:hover:bg-gray-700 transition-colors duration-300' 
       onClick={onClickHandler}
     >
-      <Icon className='w-6 h-6 text-teal dark:text-light-cyan dark:text-orange-400 hover:fill-orange-500 dark:hover:fill-orange-400'/>
+      <Icon className='w-6 h-6 hover:fill-orange-200 dark:hover:fill-orange-400'/>
     </button>
   )
 }

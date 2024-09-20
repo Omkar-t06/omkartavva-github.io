@@ -7,7 +7,8 @@ export default {
   ],
   theme: {
     extend: {
-      colors: {// Primary colors
+      colors: {
+        // Primary colors
         teal: '#008080',
         'sky-blue': '#87CEEB',
         'slate-gray': '#708090',
@@ -21,7 +22,18 @@ export default {
         // Dark Mode Colors
         'dark-navy': '#0D1B2A',
         'light-cyan': '#E0FFFF',
-        orange: '#FF6F00',
+        orange: {
+          50: '#FFF5E6',
+          100: '#FFEDCC',
+          200: '#FFD299',
+          300: '#FFB866',
+          400: '#FF9D33',
+          500: '#FF8300',
+          600: '#E67300',
+          700: '#CC6300',
+          800: '#B35300',
+          900: '#993F00',
+        },
         white: '#FFFFFF',
       }
     },
