@@ -1,13 +1,11 @@
 import React from 'react'
+import SectionalCards from './SectionalCards'
 
 function Contact() {
   return (
-    <section 
-      id = 'contact'
-      className = 'm-4 p-4 rounded-md shadow-md h-60 dark:border-charcoal dark:border-solid dark:border-2'
-    >
-      Contact
-    </section>
+   <SectionalCards sectionId={'contact'}>
+    Contact
+   </SectionalCards>
   )
 }
 
