@@ -1,38 +1,25 @@
 import React, {useState} from 'react'
 import NavItem from './NavItem';
 
-function Navbar() { 
-  const [activeSection, setActiveSection] = useState('#home');
-  function clickHandler(link) {
-    setActiveSection(link)
-  }
-
+function Navbar() {
   return (
     <nav className='sticky top-0 p-2 bg-ivory dark:bg-dark-navy shadow-md text-teal dark:text-light-cyan'>
         <ul className='flex space-x-4'>
             <NavItem
-              ItemName='Home' 
-              ItemLink='#home' 
-              onClick={clickHandler}
-              activeSection={activeSection}
+              ItemName='Home'
+              ItemLink='#home'
             />
             <NavItem 
-              ItemName='About' 
-              ItemLink='#about' 
-              onClick={clickHandler}
-              activeSection={activeSection}
+              ItemName='About'
+              ItemLink='#about'
             />
             <NavItem 
-              ItemName='Projects' 
-              ItemLink='#project' 
-              onClick={clickHandler}
-              activeSection={activeSection}
+              ItemName='Projects'
+              ItemLink='#project'
             />
             <NavItem 
-              ItemName='Contact' 
-              ItemLink='#contact' 
-              onClick={clickHandler}
-              activeSection={activeSection}
+              ItemName='Contact'
+              ItemLink='#contact'
             />
         </ul>
     </nav>
