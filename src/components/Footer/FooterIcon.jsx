@@ -6,8 +6,9 @@ function FooterIcon({refLink, Icon}) {
         href={refLink}
         target="_blank"
         rel="noopener noreferrer"
+        className='hover:text-orange-500 dark:hover:text-orange-400 transition-colors duration-300'
     >
-        <Icon className="h-5 w-5 text-teal dark:text-light-cyan" />
+        <Icon className="h-5 w-5" />
     </a>
   )
 }

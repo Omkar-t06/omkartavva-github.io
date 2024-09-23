@@ -3,6 +3,11 @@ import { ThemeProvider } from './context/theme'
 import './App.css'
 import Headers from './components/Header/Header'
 import Footer from './components/Footer/Footer'
+import Home from './components/Main/Home'
+import About from './components/Main/About'
+import Portfolio from './components/Main/Portfolio'
+import Contact from './components/Main/Contact'
+
 function App() {
   const [themeMode, setThemeMode] = useState("light")
 
@@ -31,7 +36,12 @@ function App() {
   return (
     <ThemeProvider value={{themeMode, lightTheme, darkTheme}}>
       <Headers/>
-      <section id = 'home' className = 'bg-ivory dark:bg-dark-navy p-4 m-5 shadow-md h-60'>home</section>
+      <main className='bg-ivory dark:bg-dark-navy text-teal dark:text-light-cyan flex flex-col'>
+        <Home/>
+        <About/>
+        <Portfolio/>
+        <Contact/>
+      </main>
       <Footer {...siteProps}/>
     </ThemeProvider>
   )
