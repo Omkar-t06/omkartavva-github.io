@@ -8,7 +8,9 @@ import Portfolio from './components/Main/Portfolio'
 import Contact from './components/Main/Contact'
 
 function App() {
-  const [themeMode, setThemeMode] = useState("light")
+  const [themeMode, setThemeMode] = useState(
+    () => localStorage.getItem("theme") || "light"
+  )
 
   const darkTheme = () => {
     setThemeMode("dark")
@@ -21,6 +23,8 @@ function App() {
   useEffect(() => {
     document.querySelector('html').classList.remove("light","dark");
     document.querySelector('html').classList.add(themeMode);
+
+    localStorage.setItem("theme", themeMode);
   }, [themeMode]);
 
   const siteProps = {

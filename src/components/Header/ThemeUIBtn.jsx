@@ -13,6 +13,7 @@ function ThemeUIBtn() {
     } else {
       lightTheme();
     }
+    localStorage.setItem("theme", themeMode);
   }
 
   const Icon = themeMode === "dark" ? MdLightMode : MdDarkMode;

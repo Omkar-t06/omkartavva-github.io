@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import SectionalCards from './SectionalCards'
 import ReactTypingEffect from 'react-typing-effect'
 
