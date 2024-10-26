@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react'
 import { ThemeProvider } from './context/theme'
-import './App.css'
 import Headers from './components/Header/Header'
 import Footer from './components/Footer/Footer'
 import Home from './components/Main/Home'

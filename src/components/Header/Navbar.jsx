@@ -3,8 +3,8 @@ import NavItem from './NavItem';
 
 function Navbar() {
   return (
-    <nav className='sticky top-0 p-2 bg-ivory dark:bg-dark-navy shadow-md text-teal dark:text-light-cyan'>
-        <ul className='flex space-x-4'>
+    <nav className='sticky top-0 w-full bg-ivory dark:bg-dark-navy shadow-md text-teal dark:text-light-cyan z-10'>
+        <ul className='flex md:justify-center justify-start space-x-4'>
             <NavItem
               ItemName='Home'
               ItemLink='#home'
