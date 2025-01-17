@@ -6,7 +6,7 @@ function Home() {
 
   return (
     <SectionalCards sectionId={'home'}>
-      <section className="flex flex-col lg:flex-row-reverse lg:justify-between sm:items-center space-y-6 lg:space-y-0">
+      <section className="flex flex-col lg:flex-row-reverse lg:justify-between items-center space-y-6 lg:space-y-0">
         <section className="flex justify-center shadow-lg shadow-orange-300 dark:shadow-slate-300 rounded-3xl border-solid border-off-white dark:border-light-cyan hover:border-orange-100 dark:hover:border-charcoal border-8 h-48 w-48 lg:h-64 lg:w-64">
           <img 
             src="https://user-images.githubusercontent.com/37551474/113611467-3a567d80-9657-11eb-862b-b07b4f105c6f.gif" 

@@ -22,12 +22,14 @@ function About() {
               <li>Python</li>
               <li>Java/Kotlin</li>
               <li>Flutter-Dart</li>
+              <li>Android Jetpack Compose</li>
             </ul>
             <ul className="list-disc list-inside space-y-2">
-              <li>Android Jetpack Compose</li>
               <li>HTML-CSS-JS</li>
               <li>React</li>
               <li>Firebase</li>
+              <li>Git-GitHub</li>
+              <li>Postman</li>
             </ul>
           </section>
           <hr className="my-6 border-t border-teal-500 dark:border-teal-200" />
