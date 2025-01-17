@@ -2,10 +2,10 @@ import { useEffect, useState } from 'react'
 import { ThemeProvider } from './context/theme'
 import Headers from './components/Header/Header'
 import Footer from './components/Footer/Footer'
-import Home from './components/Main/Home'
-import About from './components/Main/About'
-import Portfolio from './components/Main/Portfolio'
-import Contact from './components/Main/Contact'
+import Home from './components/Main/Home/Home'
+import About from './components/Main/About/About'
+import Portfolio from './components/Main/Portfolio/Portfolio'
+import Contact from './components/Main/Contact/Contact'
 
 function App() {
   const [themeMode, setThemeMode] = useState(

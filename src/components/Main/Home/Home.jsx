@@ -1,5 +1,5 @@
 import React from 'react'
-import SectionalCards from './SectionalCards'
+import SectionalCards from '../SectionalCards'
 import ReactTypingEffect from 'react-typing-effect'
 
 function Home() {
